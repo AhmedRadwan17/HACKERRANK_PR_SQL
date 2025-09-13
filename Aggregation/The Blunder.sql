@@ -5,3 +5,8 @@ SELECT CEIL(
 ) AS error
 
 FROM employees;
+
+
+--> another answer --> As it is very sample answer
+
+SELECT ceil((avg(Salary) - avg(replace(Salary,'0','')))) as correct from EMPLOYEES 
