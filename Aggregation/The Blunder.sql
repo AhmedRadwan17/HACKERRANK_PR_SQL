@@ -10,3 +10,9 @@ FROM employees;
 --> another answer --> As it is very sample answer
 
 SELECT ceil((avg(Salary) - avg(replace(Salary,'0','')))) as correct from EMPLOYEES 
+
+--> another answer 
+select
+ CEILING(avg(Convert(decimal,salary)) - 
+ avg(Convert(decimal,(replace(Convert(varchar(10),salary),'0','')))))
+from EMPLOYEES;
